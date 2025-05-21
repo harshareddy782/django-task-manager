@@ -38,19 +38,19 @@ A simple yet powerful **Task Manager Web Application** built with Django. It sup
    cd task_manager
 
 2.**Create a virtual environment**
-   ```python -m venv venv
+   python -m venv venv
    venv\Scripts\activate  # On Windows
 
 3.**Install dependencies**
-pip install -r requirements.txt
+   pip install -r requirements.txt
 4.**Run migrations**
-python manage.py migrate
+   python manage.py migrate
 5.**Create a superuser (admin)**
-python manage.py createsuperuser
+   python manage.py createsuperuser
 6.**Start the server**
-python manage.py runserver
+   python manage.py runserver
 7.**Open in browser:**
-http://127.0.0.1:8000/
+   http://127.0.0.1:8000/
 
 📌 **Tech Stack**
 Backend: Django (Python)
