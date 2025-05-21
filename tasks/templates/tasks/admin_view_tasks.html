@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Tasks of {{ user_obj.username }}</h2>
+
+<a href="{% url 'admin_user_list' %}" class="btn btn-logout">Back to Users</a>
+
+<ul>
+  {% for task in tasks %}
+  <li>
+    <strong>{{ task.name }}</strong>
+    <a href="{% url 'admin_edit_task' task.id %}" class="btn btn-edit">Edit</a>
+    <a
+      href="{% url 'admin_delete_task' task.id %}"
+      class="btn btn-delete"
+      onclick="return confirm('Are you sure?')"
+      >Delete</a
+    >
+  </li>
+  {% empty %}
+  <li>No tasks for this user.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

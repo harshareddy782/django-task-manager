@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Edit Task</h2>
+
+<form method="post">
+  {% csrf_token %} Name:
+  <input type="text" name="name" value="{{ task.name }}" /><br />
+  Description:
+  <textarea name="description">{{ task.description }}</textarea><br />
+  Due Date:
+  <input
+    type="date"
+    name="due_date"
+    value="{{ task.due_date|date:'Y-m-d' }}"
+  /><br />
+  <button type="submit" class="btn btn-edit">Update Task</button>
+</form>
+
+<a href="{% url 'admin_view_tasks' task.user.id %}" class="btn btn-logout"
+  >Back to User's Tasks</a
+>
+{% endblock %}

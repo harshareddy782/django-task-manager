@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+
+<h2>Edit Task</h2>
+
+<form method="POST">
+  {% csrf_token %}
+  <input type="text" name="name" value="{{ task.name }}" required /><br />
+  <textarea name="description">{{ task.description }}</textarea><br />
+  <label>
+    Start Date:
+    <input
+      type="date"
+      name="start_date"
+      value="{{ task.start_date }}"
+      required
+    /> </label
+  ><br />
+  <label>
+    Due Date:
+    <input
+      type="date"
+      name="due_date"
+      value="{{ task.due_date }}"
+      required
+    /> </label
+  ><br />
+  <button type="submit" class="btn btn-edit">Save Changes</button>
+</form>
+
+<a href="{% url 'dashboard' %}" class="btn btn-logout">Back to Dashboard</a>
+
+{% endblock %}
