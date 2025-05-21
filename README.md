@@ -27,34 +27,6 @@ A simple yet powerful **Task Manager Web Application** built with Django. It sup
 - Action buttons for all key functions
 - Task due dates shown in readable format
 
----
-
-## 📁 Project Structure
-
-task_manager/
-│
-├── tasks/ # Django app
-│ ├── templates/tasks/ # HTML templates
-│ │ ├── dashboard.html
-│ │ ├── login.html
-│ │ ├── register.html
-│ │ ├── admin_user_list.html
-│ │ └── ...
-│ ├── static/tasks/ # CSS files
-│ │ └── style.css
-│ └── views.py, models.py, ...
-│
-├── task_manager/ # Main project folder
-│ ├── settings.py
-│ ├── urls.py
-│ └── ...
-│
-├── db.sqlite3
-├── manage.py
-└── README.md
-
-
----
 
 ## 💻 How to Run the Project
 
@@ -66,8 +38,9 @@ task_manager/
    cd task_manager
 
 2.**Create a virtual environment**
-python -m venv venv
-venv\Scripts\activate  # On Windows
+   ```python -m venv venv
+   venv\Scripts\activate  # On Windows
+
 3.**Install dependencies**
 pip install -r requirements.txt
 4.**Run migrations**
