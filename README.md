@@ -32,39 +32,36 @@ A simple yet powerful **Task Manager Web Application** built with Django. It sup
 
 ### 🔧 Setup Instructions
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/task_manager.git
-   cd task_manager
+**1.Clone the repository**
 
-2.**Create a virtual environment**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # On Windows
+git clone https://github.com/yourusername/task_manager.git<br>
+cd task_manager
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-4.**Run migrations**
-   ```bash
-   python manage.py migrate
-5.**Create a superuser (admin)**
-   ```bash
-   python manage.py createsuperuser
-6.**Start the server**
-   ```bash
-   python manage.py runserver
-7.**Open in browser:**
-   ```bash
-   http://127.0.0.1:8000/
+**2.Create a virtual environment**<br>
+python -m venv venv<br>
+venv\Scripts\activate  # On Windows
 
-📌 **Tech Stack**
-Backend: Django (Python)
+**3.Install dependencies**<br>
+pip install -r requirements.txt
 
+**4.Run migrations**<br>
+python manage.py migrate
+
+**5.Create a superuser**<br>
+python manage.py createsuperuser
+
+**6.Start the server**<br>
+python manage.py runserver
+
+**7.Open in browser**<br>
+http://127.0.0.1:8000/
+
+**📌 Tech Stack**<br>
+Backend: Django (Python)<br>
 Frontend: HTML, CSS, Bootstrap
 
-**🧑‍💻 Author**
-Name:Tamanampudi Harsha Vardhan Reddy
-Python Full Stack Developer
+**🧑‍💻 Author**<br>
+Name:Tamanampudi Harsha Vardhan Reddy<br>
+Python Full Stack Developer<br>
 Email: harshareddy782@gmail.com
 
